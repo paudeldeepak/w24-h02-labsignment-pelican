@@ -1,0 +1,246 @@
+html, body {
+  font-family: 'Georgia', serif;
+  padding: 20px; 
+}
+
+div, span {
+  font-style: italic;
+}
+
+h1 {
+  font-family: 'Garamond', serif;
+  font-size: 2em; 
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-family: 'Times New Roman', serif;
+  font-weight: bold;
+}
+
+table {
+  width: 100%;
+}
+
+a {
+  text-decoration: none; 
+}
+
+/* https://stackoverflow.com/questions/70699867/dark-mode-link-contrast-html-css */
+a:hover {
+  text-decoration: underline; 
+}
+
+p {
+  font-style: italic;
+}
+
+strong {
+  font-weight: bold;
+}
+
+ul {
+  list-style-type: square; 
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* Light Mode Styles */
+@media (prefers-color-scheme: light) {
+  html, body {
+    background-color: #fdf6e3; 
+    color: #050505; 
+  }
+
+  div, span {
+    color: #555555; 
+  }
+
+  h3 {
+    color: #444; 
+  }
+
+  tr {
+    background-color: #ffffe0;
+  }
+
+  td {
+    border: 1px solid #0f0f0f; 
+  }
+
+  a {
+    color: #0390fc; 
+  }
+
+  strong {
+    color: #0f0f0f; 
+  }
+
+}
+
+/* Dark Mode Styles */
+@media (prefers-color-scheme: dark) {
+  html, body {
+    align-items: center;
+    background-color: #000000; 
+    color: #FFFFFF; 
+    font-family: 'Aboreto','Comic Sans MS';
+    background-image: url('space-background-spaceship-arcade-game.webp');
+    background-repeat: repeat;
+  }
+
+  div, section, article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  h1, h2, h3, p, a, span, li {
+    text-align: center;
+    width: 100%;
+  }
+
+  table {
+    margin-left: auto; 
+    margin-right: auto;
+  }
+
+  div, span {
+    color: #EA906C; 
+    text-shadow: 2px 2px #2B2A4C;
+  }
+
+  h3 {
+    color: #FDBF60;
+    text-shadow: 3px 3px #59CE8F;
+  }
+
+  tr {
+    background-color: #492E87;
+  }
+
+  td {
+    border: 1px solid #F5EA5A;
+  }
+
+  a {
+    color: #ADD8E6;
+    text-shadow: 1px 1px #EB455F;
+  }
+
+  a:visited {
+    color: #CF0A0A;
+  }
+
+  strong {
+    color: #00FFFF;
+    text-shadow: 1px 1px #D800A6;
+  }
+}
+
+/* Styles for printing */
+  @media print {
+    html, body {
+      background-color: #FFFFFF; 
+      color: #050505; 
+    }
+
+    div, span {
+      color: #444; 
+    }
+
+    h3 {
+      color: #444; 
+    }
+
+    a {
+      color: #050505; 
+    }
+
+    strong {
+      color: #0f0f0f; 
+    }
+
+    tr {
+      background-color: #FFFFFF;
+    }
+
+    td {
+      border: 0px solid #0f0f0f; 
+    }
+
+  }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  body {
+    padding: 5px;
+  }
+
+  h1 {
+    font-size: 1.75em; 
+  }
+
+  h2, h3 {
+    font-size: 1.25em; 
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  html, body {
+    padding: 10px; 
+  }
+
+  h1 {
+    font-size: 2.0em; 
+  }
+
+  h2, h3 {
+    font-size: 1.90em; 
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  html, body {
+    padding: 15px; 
+  }
+
+  h1 {
+    font-size: 2.10em; 
+  }
+
+  h2, h3 {
+    font-size: 2.0em; 
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  html, body {
+    padding: 20px; 
+  }
+
+  h1 {
+    font-size: 2.25em; 
+  }
+
+  h2, h3 {
+    font-size: 1.75em; 
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  h1 {
+    font-size: 2.5em; 
+  }
+}
